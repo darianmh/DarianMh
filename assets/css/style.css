@@ -27,10 +27,14 @@ font-family: 'Poppins', sans-serif;
 		1.General css (Reset code)
 --------------------------------------*/
 
+:root {
+    --secondary: #d92cf9;
+    --primary: #fff;
+}
+
 * {
     padding: 0;
     margin: 0;
-    direction: rtl;
 }
 
 * {
@@ -45,7 +49,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: #676a81;
-    background: #fff;
+    background: var(--primary);
     max-width: 1920px;
     margin: 0 auto;
     overflow-x: hidden;
@@ -148,12 +152,12 @@ body {
 @media (min-width: 1024px) {}
 
 nav.navbar.bootsnav.no-background {
-    background-color: #fff;
+    background-color: var(--primary);
     border: none;
 }
 
 nav.navbar.bootsnav {
-    background-color: #fff;
+    background-color: var(--primary);
     border-bottom: transparent;
     box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
 }
@@ -165,7 +169,7 @@ nav.navbar.bootsnav {
 .navbar-header a.navbar-brand:hover,
 .navbar-header a.navbar-brand:focus {
     display: inline-block;
-    color: #d92cf9;
+    color: var(--secondary);
     font-size: 20px;
     font-weight: 600;
     padding: 33px 0px 57px;
@@ -196,7 +200,7 @@ nav.navbar.bootsnav ul.nav>li>a {
 nav.navbar.bootsnav ul.nav>li>a:hover,
 nav.navbar.bootsnav ul.nav>li>a:focus,
 nav.navbar.bootsnav ul.nav>li.active>a {
-    color: #d92cf9;
+    color: var(--secondary);
 }
 
 nav.navbar.bootsnav ul.nav>li.dropdown>a.dropdown-toggle:after {
@@ -215,7 +219,7 @@ nav.navbar.bootsnav ul.nav>li.dropdown span {
 .sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav>li>a:hover,
 .sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav>li>a:focus,
 .sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav>li.active>a {
-    color: #d92cf9;
+    color: var(--secondary);
 }
 
 
@@ -238,7 +242,7 @@ nav.navbar.bootsnav ul.nav>li.dropdown span {
 }
 
 .menu-ui-design::-webkit-scrollbar-thumb {
-    background-color: #d92cf9;
+    background-color: var(--secondary);
 }
 
 
@@ -250,13 +254,13 @@ nav.navbar.bootsnav ul.nav>li.dropdown span {
 nav.navbar.bootsnav .navbar-toggle {
     position: relative;
     background-color: transparent;
-    border: 1px solid #d92cf9;
+    border: 1px solid var(--secondary);
     padding: 10px;
     top: 0;
 }
 
 nav.navbar.bootsnav .navbar-toggle i {
-    color: #d92cf9;
+    color: var(--secondary);
 }
 
 
@@ -292,7 +296,7 @@ nav.navbar.bootsnav .navbar-toggle i {
 /*.header-text-area*/
 
 .header-text h2 {
-    color: #fff;
+    color: var(--primary);
     font-size: 54px;
     font-weight: 700;
     text-transform: uppercase;
@@ -300,11 +304,11 @@ nav.navbar.bootsnav .navbar-toggle i {
 }
 
 .header-text h2 span {
-    color: #d92cf9;
+    color: var(--secondary);
 }
 
 .header-text p {
-    color: #fff;
+    color: var(--primary);
     font-size: 20px;
     font-weight: 300;
     text-transform: uppercase;
@@ -318,7 +322,7 @@ nav.navbar.bootsnav .navbar-toggle i {
     line-height: 60px;
     border-radius: 3px;
     text-transform: capitalize;
-    color: #fff;
+    color: var(--primary);
     background: #b636ff;
     border: 1px solid #b636ff;
     box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
@@ -433,12 +437,12 @@ nav.navbar.bootsnav .navbar-toggle i {
 .about-list-icon ul li a {
     padding-right: 22px;
     cursor: pointer;
-    color: #fff;
+    color: var(--primary);
 }
 
 .about-list-icon ul li a {
     cursor: pointer;
-    color: #fff;
+    color: var(--primary);
     display: inline-block;
     border: 2px solid;
     margin-left: 20px;
@@ -508,7 +512,7 @@ nav.navbar.bootsnav .navbar-toggle i {
 
 .timeline-horizontal-border i {
     font-size: 10px;
-    color: #d92cf9;
+    color: var(--secondary);
     margin-right: 5px;
 }
 
@@ -607,7 +611,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 .popOver+.tooltip>.tooltip-arrow {
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
-    border-top: 6px solid #fff;
+    border-top: 6px solid var(--primary);
     bottom: -1px;
     transform: translateX(-50%);
     margin-left: 0;
@@ -677,7 +681,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 
 .timeline-content span>i,
 .experience-time span>i {
-    color: #d92cf9;
+    color: var(--secondary);
     position: absolute;
     font-size: 10px;
     left: -14.5%;
@@ -714,7 +718,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
     position: absolute;
     width: 100%;
     height: 400px;
-    border-left: 15px solid #fff;
+    border-left: 15px solid var(--primary);
 }
 
 .experience-time-responsive {
@@ -785,11 +789,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {
     content: " ";
     width: 100%;
     height: 100%;
-    background: #d92cf9;
-    background: -moz-linear-gradient(left, #d92cf9 0%, #b636ff 100%);
-    background: -webkit-linear-gradient(left, #d92cf9 0%, #b636ff 100%);
-    background: linear-gradient(to right, #d92cf9 0%, #b636ff 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d92cf9', endColorstr='#b636ff', GradientType=1);
+    background: var(--secondary);
+    background: -moz-linear-gradient(left, var(--secondary) 0%, #b636ff 100%);
+    background: -webkit-linear-gradient(left, var(--secondary) 0%, #b636ff 100%);
+    background: linear-gradient(to right, var(--secondary) 0%, #b636ff 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='var(--secondary)', endColorstr='#b636ff', GradientType=1);
     -webkit-transform: scale(0);
     -moz-transform: scale(0);
     -ms-transform: scale(0);
@@ -813,7 +817,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 
 .single-profile:hover .profile-icon-name,
 .single-profile:hover .profile-txt a>i {
-    color: #fff;
+    color: var(--primary);
 }
 
 .single-profile:hover .profile-border {
@@ -900,7 +904,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 
 .isotope-overlay a {
     display: inline-block;
-    color: #fff;
+    color: var(--primary);
     font-size: 14px;
     text-align: center;
 }
@@ -964,11 +968,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 .contact-form .form-control {
     padding: 25px;
     font-size: 14px;
-    border: 1px solid #fff;
+    border: 1px solid var(--primary);
     border-radius: 0px;
     box-shadow: none;
     outline: 0!important;
-    background: #fff;
+    background: var(--primary);
     color: #636a82;
     resize: none;
 }
@@ -999,7 +1003,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
     margin-top: 0px;
     outline: 0 !important;
     border: 0;
-    color: #fff;
+    color: var(--primary);
     border-radius: 0px;
     font-size: 14px;
     -webkit-transition: .5s;
@@ -1114,7 +1118,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
     text-align: center;
     font-size: 20px;
     cursor: pointer;
-    color: #fff;
+    color: var(--primary);
     background: #b636ff;
     border: 1px solid #b636ff;
     border-radius: 50%;
@@ -1127,7 +1131,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 }
 
 #scroll-Top .return-to-top:hover {
-    background: #fff;
+    background: var(--primary);
     color: #b636ff;
     border: 1px solid #b636ff;
 }
@@ -1159,7 +1163,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 }
 
 .ltr {
-    direction: ltr;
+    direction: ltr !important;
+    text-align: left !important;
 }
 
 .m-auto {
